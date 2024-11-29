@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="sidebar">
+        <div class="icon"><h1>Do it</h1></div>
+        <div class="form">
+            <form action="post">
+                <fieldset>
+                <label for="ProjectName">Project Name: </label>
+                <input type="text" name="ProjectName" required id="name">
+                <label for="Description">Description: </label>
+                <input type="text" name="Description" id="description">
+                <label for="Due">Due: </label>
+                <input type="date" name="Due" id="due">
+                <div>
+                    <h2>Priority</h2>
+                    <div>
+                        <label for="High">High</label>
+                        <input type="radio" name="test" value="High" class="radio">
+                    </div>
+                    <div>
+                        <label for="Mid">Mid</label>
+                        <input type="radio" name="test" value="Mid" class="radio">
+                    </div>
+                    <div>
+                        <label for="Low">Low</label>
+                        <input type="radio" name="test" value="Low" class="radio">
+                    </div>
+                </div>
+                <button class="addProject">Add Project</button>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="content"></div>
+    
+</body>
+</html>
